@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Supernatural</title>
+    <link rel="stylesheet" href="/CSS/OMGCSS.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="/NewjeansEXE.html" target="_parent">NewJeans</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="/HTML/NJHTML.html" target="_parent">Home</a></li>
+                <li><a href="/HTML/newjeans.html">NewJeans</a></li>
+                <li><a href="/HTML/asap.html " target="_parent" >GET UP</a></li>
+                <li><a href="/HTML/OMG.html">OMG</a></li>
+                <li><a href="/HTML/HOWSWEET.html">How Sweet</a></li>
+                <li><a href="/HTML/Supernatural.html">Supernatural</a></li>           
+                <li><a href="/HTML/ZERO.html">Zero</a></li>
+                <li><a href="/HTML/GODS.html">GODS</a></li>
+                <li><a href="/HTML/OST.html">OST</a></li>
+                <li><a href="/HTML/NJWMX.html">NJWMX</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="but" id="slideButton" src="/photo/Supernatural.png" alt="Show/Hide Button" style="cursor: pointer; width: 500px; height: 500px;">
+    <a class="getupF"> Supernatural</a>
+    <a class="getupF">June 25, 2024</a>
+    <a class="aaaa">**Click on the picture. to display a list of songs and click again to hide.**</a>
+    <div class="container">
+       <a class="comingsoon slide-item" style="font-size: 50px;">COMING SOON !</a>
+    </div>
+   
+</body>
+
+</html>
+<script>document.getElementById('slideButton').addEventListener('click', function() {
+    let button = this;
+    let items = document.querySelectorAll('.slide-item');
+    let index = 0;
+
+    
+    let isShowing = items[0].classList.contains('show');
+
+    function slideNextItem() {
+        if (index < items.length) {
+            if (isShowing) {
+                items[index].classList.remove('show');
+                items[index].classList.add('hide');
+            } else {
+                items[index].classList.remove('hide');
+                items[index].classList.add('show');
+            }
+            index++;
+            setTimeout(slideNextItem, 50); 
+        }
+    }
+
+    slideNextItem();
+
+  
+    
+});</script>

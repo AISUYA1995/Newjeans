@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OST</title>
+    <link rel="stylesheet" href="/CSS/OMGCSS.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="/NewjeansEXE.html" target="_parent">NewJeans</a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="/HTML/NJHTML.html" target="_parent">Home</a></li>
+                <li><a href="/HTML/newjeans.html">NewJeans</a></li>
+                <li><a href="/HTML/asap.html " target="_parent" >GET UP</a></li>
+                <li><a href="/HTML/OMG.html">OMG</a></li>
+                <li><a href="/HTML/HOWSWEET.html">How Sweet</a></li>
+                <li><a href="/HTML/Supernatural.html">Supernatural</a></li>           
+                <li><a href="/HTML/ZERO.html">Zero</a></li>
+                <li><a href="/HTML/GODS.html">GODS</a></li>
+                <li><a href="/HTML/OST.html">OST</a></li>
+                <li><a href="/HTML/NJWMX.html">NJWMX</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="but" id="slideButton" src="/photo/pd.jpg" alt="Show/Hide Button" style="cursor: pointer; width: 500px; height: 500px;">
+    <a class="getupF">OST</a>
+    <a class="getupF">Our Night Is More Beautiful Than Your Day(November 23, 2023), Beautiful Restriction(September 01, 2023), Part of Your World(May 17, 2023)</a>
+    <a class="aaaa">**Click on the picture. to display a list of songs and click again to hide.**</a>
+    <div class="container">
+        <iframe class="OurNightIsMoreBeautifulThanYourDay slide-item" style="border-radius:12px" src="https://open.spotify.com/embed/track/11YovYUVkZdLyOFncbecWL?utm_source=generator" width="350" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="BeautifulRestriction slide-item" style="border-radius:12px" src="https://open.spotify.com/embed/track/7CHDUDw89DCR8vvI0yTXGa?utm_source=generator" width="350" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe class="PartofYourWorld slide-item" style="border-radius:12px" src="https://open.spotify.com/embed/track/2ouYvmVxhKfNR1LHrMLHqM?utm_source=generator" width="350" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+   
+</body>
+
+</html>
+<script>document.getElementById('slideButton').addEventListener('click', function() {
+    let button = this;
+    let items = document.querySelectorAll('.slide-item');
+    let index = 0;
+
+    
+    let isShowing = items[0].classList.contains('show');
+
+    function slideNextItem() {
+        if (index < items.length) {
+            if (isShowing) {
+                items[index].classList.remove('show');
+                items[index].classList.add('hide');
+            } else {
+                items[index].classList.remove('hide');
+                items[index].classList.add('show');
+            }
+            index++;
+            setTimeout(slideNextItem, 50); 
+        }
+    }
+
+    slideNextItem();
+
+  
+    
+});</script>

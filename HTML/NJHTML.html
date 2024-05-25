@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/CSS/NJCSS.css">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body >
+  <header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/NewjeansEXE.html" target="_parent">NewJeans</a>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="/HTML/NJHTML.html" target="_parent">Home</a></li>
+          <li><a href="/HTML/newjeans.html">NewJeans</a></li>
+          <li><a href="/HTML/asap.html " target="_parent" >GET UP</a></li>
+          <li><a href="/HTML/OMG.html">OMG</a></li>
+          <li><a href="/HTML/HOWSWEET.html">How Sweet</a></li>
+          <li><a href="/HTML/Supernatural.html">Supernatural</a></li>           
+          <li><a href="/HTML/ZERO.html">Zero</a></li>
+          <li><a href="/HTML/GODS.html">GODS</a></li>
+          <li><a href="/HTML/OST.html">OST</a></li>
+          <li><a href="/HTML/NJWMX.html">NJWMX</a></li>
+      </ul>
+    </nav>
+</header>
+    <script src="JSNJ.js"></script>
+    <audio controls id="audioPlayer" preload="auto" style="display: none;">
+        <source src="SOUND/NewJeans New Jeans.mp3" type="audio/mpeg">
+      </audio>
+      
+      
+    <a href="#" class="rotate">  <img src="photo/logonj.png" alt="" onclick="playAudio()" class="play" id="play"></a>
+      <script>
+        const audio = document.getElementById("audioPlayer");
+        audio.volume = 0.5;
+      
+        function playAudio() {
+          audio.play();
+        }
+      </script>
+  <div class="air1"></div>
+</body>
+<div class="box1">
+  <a onclick="hannibestpast()">
+    <img src="/photo/hn2.jpg" alt="Hanni" class="hanni">
+</a>
+<a onclick="minjiloveu3000()"><img src="/photo/minji.jpg" alt="minji" class="minji"></a>
+
+<a onclick="haerinlovelee()"><img src="/photo/haerin.jpg" alt="" class="haerin"></a>
+
+<a onclick="danirainingday()"><img src="/photo/dani.jpg" alt="" class="dani"></a>
+
+<a onclick="hyeinslowdance()"><img src="/photo/hyein.jpg" alt="" class="hyein"></a>
+
+
+    </div>
+  </div>
+  <div class="tonearm">
+    <div class="arm"></div>
+    <div class="head"></div>
+    <div class="stylus"></div>
+  </div>
+  <audio id="hnbp" src="/SOUND/bast past hanni_cover.mp3"></audio>
+  <audio id="minj" src="/SOUND/MINJI I Love You 3000 (Cover) Lyrics (Color Coded Lyrics).mp3"></audio>
+  <audio id="haer" src="/SOUND/HAERIN 'Love Lee (Cover)' Lyrics (Color Coded Lyrics) (128 kbps).mp3"></audio>
+  <audio id="danir" src="/SOUND/DANIELLE (NewJeans) Rainy Days (by V (BTS)) Lyrics (Color Coded Lyrics) (128 kbps).mp3"></audio>
+  <audio id="hyeslo" src="/SOUND/HYEIN 'Slow Dancing (Cover)' Lyrics (Color Coded Lyrics) (128 kbps).mp3"></audio>
+  </html>
+<script>
+  function hannibestpast() {
+      var audio = document.getElementById('hnbp');
+      if (audio.paused) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+    }
+
+      function minjiloveu3000() {
+      var audio = document.getElementById('minj');
+      if (audio.paused) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+    }
+
+    function haerinlovelee(){
+      var audio = document.getElementById('haer');
+      if (audio.paused) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+    }
+
+    function danirainingday() {
+      var audio = document.getElementById('danir');
+      if (audio.paused) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+    }
+
+    function hyeinslowdance() {
+      var audio = document.getElementById('hyeslo');
+      if (audio.paused) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+    }
+  </script>
