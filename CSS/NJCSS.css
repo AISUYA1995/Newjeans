@@ -315,14 +315,16 @@ header {
   }
 }
 @media (max-width: 480px) {
-  .box1 {
+ .box1 {
       width: 90%; /* ปรับความกว้างเป็นเปอร์เซ็นต์ */
       height: auto; /* ปรับความสูงเป็น auto เพื่อรักษาสัดส่วน */
       position: relative;
       top: 1800px;
-     
-            transform: translateY(-50%); /* จัดให้อยู่ตรงกลางแนวตั้ง */
+     left: 70px;
+           
         }
+           
+        
     
     
   
